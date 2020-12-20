@@ -8,8 +8,18 @@
     </head>
     </body>
         <main>
+            <div id="root"></div>
         </main>
-        <script src="index.js"></script>
+        <script src="http://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+        <script src="http://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+        <script>
+
+            const ourDiv = React.createElement("div", {children: "Anything I want"});
+
+
+            ReactDOM.render(ourDiv , document.getElementById("root"));
+
+        </script>
     </body> 
     
 </html>
