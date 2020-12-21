@@ -18,3 +18,8 @@ To see all page data, paste this into the left column of the Graphql playground:
   }
 }
 ```
+
+To login to the CMS: 
+
+https://coffeeinfo.sanity.studio/ynp348yw
+
