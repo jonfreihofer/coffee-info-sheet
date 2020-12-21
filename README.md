@@ -14,6 +14,7 @@ To see all page data, paste this into the left column of the Graphql playground:
 {
   allPage {
     title
+    body
   }
 }
 ```
