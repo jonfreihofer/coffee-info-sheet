@@ -2,3 +2,68 @@ body {
     margin: 0 auto;
     font-family: 'Hind Vadodara', sans-serif;
 }
+/* typeography */
+.navbar h1 {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 2rem;
+    color: white;
+}
+
+/* was trying to make the o's look like coffee beans...haha */
+.navbar h1 span {
+    /* font-style: italic; */
+    color: orangered;
+}
+
+/* nav stuff */
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    max-width: 100%;
+    overflow: hidden;
+    background-color: #333;
+    position: fixed; 
+    top: 0; 
+    width: 100%; 
+    padding: 1.5em;
+    background: #1c1c1c;
+}
+.nav-toggle {
+    border: 0;
+    background: transparent;
+    padding: .25rem;
+}
+
+/* home made hamburgers, anyone? */
+
+.hamburger {
+    margin-right: 3em;
+    display: block;
+    position: relative;
+}
+.hamburger:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.hamburger,
+.hamburger::before,
+.hamburger::after {
+    background: white;
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.hamburger::before { top: 6px; }
+.hamburger::after { bottom: 6px; }
