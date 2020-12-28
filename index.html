@@ -5,21 +5,28 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Hind+Vadodara:wght@300;400;500&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="./styles.css">
     </head>
     </body>
         <main>
             <div id="root"></div>
         </main>
-        <script src="http://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
-        <script src="http://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
-        <script>
+            <script src="http://unpkg.com/react@16.7.0/umd/react.production.min.js"></script>
+            <script src="http://unpkg.com/react-dom@16.7.0/umd/react-dom.production.min.js"></script>
+            <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
+            <script type="text/babel">
+                
+                class App extends React.Component {
+                    render(){
+                        return(
+                            <div>
+                                <h1>Coffee Time</h1>
+                            </div>
+                        )
+                    }
+                }
+                ReactDOM.render(<App /> , document.getElementById("root"));
 
-            const ourDiv = React.createElement("div", {children: "Anything I want"});
-
-
-            ReactDOM.render(ourDiv , document.getElementById("root"));
-
-        </script>
+            </script>
     </body> 
-    
 </html>
