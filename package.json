@@ -1,0 +1,29 @@
+{
+  "name": "coffee-info-sheet",
+  "version": "1.0.0",
+  "description": "Readme oh, boh boh boh boh.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "parcel index.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jonfreihofer/coffee-info-sheet.git"
+  },
+  "author": "j.frei j. walz",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jonfreihofer/coffee-info-sheet/issues"
+  },
+  "homepage": "https://github.com/jonfreihofer/coffee-info-sheet#readme",
+  "dependencies": {
+    "react": "^17.0.1",
+    "react-dom": "^17.0.1"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.12.10",
+    "@babel/preset-react": "^7.12.10",
+    "parcel-bundler": "^1.12.4"
+  }
+}
