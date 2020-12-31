@@ -16,11 +16,28 @@
             <script src="https://unpkg.com/@babel/standalone@7.8.3/babel.js"></script>
             <script type="text/babel">
                 
+
+                function NavBar(){
+                    return (
+                    <nav className="navbar">
+                        <h1>C<span>o</span>ffee Inf<span>o</span> Sheet</h1>
+                        <button className="nav-toggle">
+                            <span class="hamburger"></span>
+                        </button>
+                    </nav>
+                        )
+                }
+
+
+
+
+
+
                 class App extends React.Component {
                     render(){
                         return(
                             <div>
-                                <h1>Coffee Time</h1>
+                                <NavBar />
                             </div>
                         )
                     }
