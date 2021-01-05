@@ -67,3 +67,10 @@ body {
 }
 .hamburger::before { top: 6px; }
 .hamburger::after { bottom: 6px; }
+
+/* Main content */
+
+
+.container-main{
+    padding: 2em;
+}

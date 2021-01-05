@@ -3,15 +3,13 @@ import ReactDOM from "react-dom"
 import NavBar from "./NavBar"
 import ContentContainer from "./ContentContainer"
 
-class App extends React.Component {
-    render() {
+function App() {
         return(
             <div>
                 <NavBar />
                 <ContentContainer />
             </div>
         )
-    }
 }
 
 ReactDOM.render(<App /> , document.getElementById("root"));

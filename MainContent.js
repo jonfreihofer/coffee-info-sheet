@@ -1,9 +1,16 @@
 import React from "react"
 
-function MainContent() {
+function MainContent(props) {
+
+//utility function to retreive data 
+    function getPageContent(selectedPage) {
+        console.log(data)
+        return data[selectedPage];
+    }
+
     return(
-        <main>
-            <h1>Boh</h1>
+        <main className="main-content">
+            <h1>Some stuff</h1>
         </main>
     )
 }
