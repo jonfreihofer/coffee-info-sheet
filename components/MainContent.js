@@ -1,16 +1,17 @@
 import React from "react"
-
-function MainContent(props) {
+import data from "/data"
 
 //utility function to retreive data 
-    function getPageContent(selectedPage) {
-        console.log(data)
-        return data[selectedPage];
-    }
+function getPageContent(selectedPage) {
+    return data[selectedPage];
+}
+
+function MainContent(props) {
+ const data = getPageContent(props.selectedPage)
 
     return(
         <main className="main-content">
-            <h1>Some stuff</h1>
+            <h1>{data}</h1>
         </main>
     )
 }
