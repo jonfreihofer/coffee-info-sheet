@@ -1,5 +1,5 @@
 export default {
-    thePant: {
+    thePlant: {
         title: "The Plant",
         content: "Some Placeholder Content"
     },

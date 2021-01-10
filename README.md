@@ -1,6 +1,6 @@
 ### Coffee info sheet
 
-This project is small informational site about all aspects of coffee.
+This project is small informational site about all aspects of coffee built using React
 
 The public graphql endpoint can be found here:
 

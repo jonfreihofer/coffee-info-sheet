@@ -6,7 +6,7 @@ class ContentContainer extends Component {
     constructor() {
         super();
         this.state = {
-            selected: ""
+            selected: "thePlant"
         }
         this.handleSelect = this.handleSelect.bind(this);
     }
@@ -19,7 +19,7 @@ class ContentContainer extends Component {
         return(
             <div className="container-main">
                 <Aside />
-                <MainContent selected={this.state.selected} />
+                <MainContent selected={this.state.selected} handleSelect={this.handleSelect} />
             </div>
         )
     }
