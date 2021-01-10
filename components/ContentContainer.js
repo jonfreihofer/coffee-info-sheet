@@ -18,7 +18,7 @@ class ContentContainer extends Component {
     render() {
         return(
             <div className="container-main">
-                <Aside />
+                <Aside handleSelect={this.handleSelect} />
                 <MainContent selected={this.state.selected} handleSelect={this.handleSelect} />
             </div>
         )
