@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom";
-import NavBar from "./NavBar";
+import NavBar from "./components/NavBar";
 import ContentContainer from "./components/ContentContainer";
 
 function App() {
