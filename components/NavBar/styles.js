@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 /* nav stuff */
-export const StyledNav = styled.div`
+export const StyledNav = styled.nav`
   display: flex;
   justify-content: space-between;
   max-width: 100%;
