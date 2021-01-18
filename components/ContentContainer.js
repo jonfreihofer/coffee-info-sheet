@@ -1,4 +1,4 @@
-import React, {Component} from "react";
+import React, { Component } from "react";
 import Aside from "./Aside";
 import MainContent from "./MainContent";
 
@@ -11,8 +11,8 @@ class ContentContainer extends Component {
     this.handleSelect = this.handleSelect.bind(this);
   }
 
-  handleSelect = option => {
-    this.setState({selected: option});
+  handleSelect = (option) => {
+    this.setState({ selected: option });
   };
 
   render() {

@@ -1,0 +1,39 @@
+import React from "react";
+import { StyledAside } from "./styles";
+
+function Aside(props) {
+  return (
+    <StyledAside>
+      <aside className="sidebar-main">
+        <ul className="sidebar-categories">
+          <li
+            className="sidebar-item"
+            onClick={() => props.handleSelect("thePlant")}
+          >
+            The Plant
+          </li>
+          <li
+            className="sidebar-item"
+            onClick={() => props.handleSelect("theProcess")}
+          >
+            The Process
+          </li>
+          <li
+            className="sidebar-item"
+            onClick={() => props.handleSelect("thePreparation")}
+          >
+            The Preparation
+          </li>
+          <li
+            className="sidebar-item"
+            onClick={() => props.handleSelect("thePresentation")}
+          >
+            The Presentation
+          </li>
+        </ul>
+      </aside>
+    </StyledAside>
+  );
+}
+
+export default Aside;
