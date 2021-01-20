@@ -1,0 +1,28 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`NavBar Should render 1`] = `
+<DocumentFragment>
+  <nav
+    class="sc-bdfBwQ FQehq"
+  >
+    <h1>
+      C
+      <span>
+        o
+      </span>
+      ffee Inf
+      <span>
+        o
+      </span>
+       Sheet
+    </h1>
+    <button
+      class="nav-toggle"
+    >
+      <span
+        class="hamburger"
+      />
+    </button>
+  </nav>
+</DocumentFragment>
+`;
