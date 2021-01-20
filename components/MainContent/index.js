@@ -1,6 +1,6 @@
 import React from "react";
 import data from "../../data";
-import StyledMainContent from "./styles";
+import { StyledMainContent } from "./styles";
 
 //utility function to retreive data
 function getPageContent(selected) {
