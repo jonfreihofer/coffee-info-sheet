@@ -6,24 +6,23 @@ function Aside(props) {
     <StyledAside>
       <aside className="sidebar-main">
         <ul className="sidebar-categories">
-        <div>
-          <li
-            className="sidebar-item">
-            <div onClick={() => props.handleSelect("thePlant")}>
-            The Plant
+          <li className="sidebar-item">
+            <div onClick={() => props.handleSelect("thePlant")}>The Plant</div>
+          </li>
+          <li className="sidebar-item">
+              <div onClick={() => props.handleSelect("theProcess")}>
+              The Process
             </div>
           </li>
-          <li
-            className="sidebar-item">
-            <div onClick={() => props.handleSelect("theProcess")}>The Process</div>
+          <li className="sidebar-item">
+            <div onClick={() => props.handleSelect("thePreparation")}>
+              The Preparation
+            </div>
           </li>
-          <li
-            className="sidebar-item">
-             <div onClick={() => props.handleSelect("thePreparation")}>The Preparation</div>
-          </li>
-          <li
-            className="sidebar-item">
-            <div onClick={() => props.handleSelect("thePresentation")}>The Presentation</div>
+          <li className="sidebar-item">
+            <div onClick={() => props.handleSelect("thePresentation")}>
+              The Presentation
+            </div>
           </li>
         </ul>
       </aside>

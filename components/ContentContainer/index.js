@@ -1,34 +1,21 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import Aside from "../Aside";
 import MainContent from "../MainContent";
 import { StyledContentContainer } from "./styles";
 
-class ContentContainer extends Component {
-  constructor() {
-    super();
-    this.state = {
-      selected: "thePlant",
-    };
-    this.handleSelect = this.handleSelect.bind(this);
-  }
-
-  handleSelect = (option) => {
-    this.setState({ selected: option });
+function ContentContainer() {
+  const [selected, setSelected] = useState("thePlant");
+  const handleSelect = (option) => {
+    setSelected({ selected: option });
   };
-
-  render() {
-    return (
-      <StyledContentContainer>
-        <div className="container-main">
-          <Aside handleSelect={this.handleSelect} />
-          <MainContent
-            selected={this.state.selected}
-            handleSelect={this.handleSelect}
-          />
-        </div>
-      </StyledContentContainer>
-    );
-  }
+  return (
+    <StyledContentContainer>
+      <div className="container-main">
+        <Aside handleSelect={handleSelect} />
+        <MainContent selected={selected} handleSelect={handleSelect} />
+      </div>
+    </StyledContentContainer>
+  );
 }
 
 export default ContentContainer;
