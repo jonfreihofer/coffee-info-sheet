@@ -8,7 +8,8 @@ function getPageContent(selected) {
 
 function MainContent(props) {
   const contentData = getPageContent(props.selected);
-  const {content, title} = contentData;
+  const { content, title } = contentData;
+
   return (
     <main className="main-content">
       <h1>{title}</h1>
