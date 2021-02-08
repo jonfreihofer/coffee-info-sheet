@@ -8,13 +8,13 @@ function getPageContent(selected) {
 }
 
 function MainContent(props) {
-  const contentData = getPageContent(props.selected);
+  const contentData = getPageContent(props);
   const { content, title } = contentData;
   return (
     <StyledMainContent>
       <div className="container-main">
-        <Aside />
-        <MainContent />
+        <h1>{title}</h1>
+        <h2>{content}</h2>
       </div>
     </StyledMainContent>
   );
