@@ -10,6 +10,7 @@ body {
 
 .sidebar-categories {
   list-style-type: none;
+  cursor: pointer;
   padding-right: 2em;
 }
 
