@@ -1,30 +1,30 @@
 import React from "react";
 
-function Aside(props) {
+function Aside({ handleSelect }) {
   return (
     <aside className="sidebar-main">
       <ul className="sidebar-categories">
         <li
           className="sidebar-item"
-          onClick={() => props.handleSelect("thePlant")}
+          onClick={() => handleSelect("theCost")}
         >
-          The Plant
+          The Cost
         </li>
         <li
           className="sidebar-item"
-          onClick={() => props.handleSelect("theProcess")}
+          onClick={() => handleSelect("theProcess")}
         >
           The Process
         </li>
         <li
           className="sidebar-item"
-          onClick={() => props.handleSelect("thePreparation")}
+          onClick={() => handleSelect("thePreparation")}
         >
           The Preparation
         </li>
         <li
           className="sidebar-item"
-          onClick={() => props.handleSelect("thePresentation")}
+          onClick={() => handleSelect("thePresentation")}
         >
           The Presentation
         </li>

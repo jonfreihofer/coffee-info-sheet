@@ -3,7 +3,7 @@ import styled from "styled-components";
 /* nav stuff */
 export const StyledNav = styled.nav`
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   max-width: 100%;
   overflow: hidden;
   background-color: #333;
@@ -17,6 +17,7 @@ export const StyledNav = styled.nav`
     letter-spacing: 2px;
     font-size: 2rem;
     color: white;
+    cursor: pointer;
 
     /* was trying to make the o's look like coffee beans...haha */
     span {
@@ -30,38 +31,4 @@ export const StyledNav = styled.nav`
     padding: 0.25rem;
   }
 
-  /* will replace this hamburger with svg or something */
-  .hamburger {
-    margin-right: 3em;
-    display: block;
-    position: relative;
-  }
-  .hamburger:hover {
-    cursor: pointer;
-    color: orangered;
-  }
-
-  .hamburger,
-  .hamburger::before,
-  .hamburger::after {
-    background: white;
-    width: 2em;
-    height: 3px;
-    border-radius: 1em;
-    transition: transform 250ms ease-in-out;
-  }
-
-  .hamburger::before,
-  .hamburger::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    right: 0;
-  }
-  .hamburger::before {
-    top: 6px;
-  }
-  .hamburger::after {
-    bottom: 6px;
-  }
 `;

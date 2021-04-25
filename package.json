@@ -1,7 +1,7 @@
 {
   "name": "coffee-info-sheet",
   "version": "1.0.0",
-  "description": "Readme oh, boh boh boh boh.",
+  "description": "Readme",
   "main": "index.js",
   "scripts": {
     "start": "parcel index.html",
