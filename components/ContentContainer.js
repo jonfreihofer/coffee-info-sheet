@@ -5,7 +5,7 @@ import MainContent from "./MainContent";
 function ContentContainer(props) {
   const [selected, setSelected] = useState("theCost");
   const handleSelect = option => {
-    setSelected({ option });
+    setSelected(option);
   };
   return (
     <div className="container-main">
