@@ -7,9 +7,6 @@ function NavBar() {
       <h1>
         C<span>o</span>ffee Inf<span>o</span> Sheet
       </h1>
-      <button className="nav-toggle">
-        <span className="hamburger" />
-      </button>
     </StyledNav>
   );
 }
