@@ -11,7 +11,6 @@ function MainContent({ selected }) {
   }, []);
 
   const currentPageData = data[selected];
-  console.log(currentPageData);
 
   if (!currentPageData) return null;
   return (
