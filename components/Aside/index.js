@@ -1,19 +1,17 @@
+/* eslint-disable jsx-a11y/no-noninteractive-element-interactions */
+/* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from "react";
+import StyledAside from "./styles";
 
+// eslint-disable-next-line react/prop-types
 function Aside({ handleSelect }) {
   return (
-    <aside className="sidebar-main">
+    <StyledAside>
       <ul className="sidebar-categories">
-        <li
-          className="sidebar-item"
-          onClick={() => handleSelect("theCost")}
-        >
+        <li className="sidebar-item" onClick={() => handleSelect("theCost")}>
           The Cost
         </li>
-        <li
-          className="sidebar-item"
-          onClick={() => handleSelect("theProcess")}
-        >
+        <li className="sidebar-item" onClick={() => handleSelect("theProcess")}>
           The Process
         </li>
         <li
@@ -29,7 +27,7 @@ function Aside({ handleSelect }) {
           The Presentation
         </li>
       </ul>
-    </aside>
+    </StyledAside>
   );
 }
 
