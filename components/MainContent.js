@@ -18,6 +18,7 @@ function MainContent({ selected }) {
     <main className="main-content">
       <h1>{currentPageData.title}</h1>
       <p>{currentPageData.content}</p>
+      <img src={currentPageData.img} alt="something related to coffee" />
     </main>
   );
 }
