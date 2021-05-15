@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from "react";
 
+// eslint-disable-next-line react/prop-types
 function MainContent({ selected }) {
   const [data, setData] = useState({});
 
