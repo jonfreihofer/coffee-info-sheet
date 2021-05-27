@@ -5,10 +5,10 @@ import ContentContainer from "./components/ContentContainer";
 
 function App() {
   return (
-    <div>
+    <>
       <NavBar />
       <ContentContainer />
-    </div>
+    </>
   );
 }
 

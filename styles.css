@@ -23,3 +23,6 @@ body {
 .container-main {
   padding: 2em;
 }
+img {
+  width: 50%;
+}
