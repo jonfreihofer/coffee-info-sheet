@@ -9,8 +9,8 @@ function MainContent({ selected }) {
     const json = await response.json();
     setData(json);
   }, []);
-  // won't need this function later, just to save me from being annoyed at all the broken images
-  const returnImg = (source) => {
+  // helper function just for now, to save me from being annoyed at all the broken images
+  const renderImg = (source) => {
     if (!source) return null;
     return <img src={source} alt="something related to coffee" />;
   };
@@ -21,7 +21,7 @@ function MainContent({ selected }) {
     <main className="main-content">
       <h1>{currentPageData.title}</h1>
       <p>{currentPageData.content}</p>
-      {returnImg(currentPageData.img)}
+      {renderImg(currentPageData.img)}
     </main>
   );
 }
