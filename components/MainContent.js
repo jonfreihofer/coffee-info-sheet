@@ -22,6 +22,7 @@ function MainContent({ selected }) {
       <h1>{currentPageData.title}</h1>
       <p>{currentPageData.content}</p>
       {renderImg(currentPageData.img)}
+      {renderImg(currentPageData.img2)}
     </main>
   );
 }
