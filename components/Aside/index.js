@@ -2,7 +2,6 @@
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React from "react";
 import { StyledAside } from "./styles";
-
 // eslint-disable-next-line react/prop-types
 function Aside({ handleSelect }) {
   return (

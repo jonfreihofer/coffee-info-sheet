@@ -23,6 +23,8 @@ body {
 .container-main {
   padding: 2em;
 }
-img {
-  width: 50%;
+.container-main img {
+  max-width: 40%;
+  max-height: 50%;
+  margin: 1em;
 }

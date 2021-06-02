@@ -12,7 +12,7 @@ function MainContent({ selected }) {
   // helper function just for now, to save me from being annoyed at all the broken images
   const renderImg = (source) => {
     if (!source) return null;
-    return <img src={source} alt="something related to coffee" />;
+    return <img src={source} alt="a pic of something related to coffee" />;
   };
 
   const currentPageData = data[selected];
