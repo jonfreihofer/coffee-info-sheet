@@ -6,14 +6,12 @@ export default function PriceInfo() {
     const url =
       "https://www.quandl.com/api/v3/datasets/ODA/PCOFFOTM_USD.json?api_key=o9YePCNh6XUqwF7y5fiZ";
     const res = await fetch(url);
-    const data = await res.json();
-    setPrice(data.dataset.data[0][1]);
+    const priceData = await res.json();
+    setPrice(priceData.dataset.data[0][1]);
   }, []);
 
   return (
-    <>
-      <h3>{`Current C Market Arabica Price:
+    <h3>{`Current C Market Arabica Price:
        ${price} US Cents/lb`}</h3>
-    </>
   );
 }
