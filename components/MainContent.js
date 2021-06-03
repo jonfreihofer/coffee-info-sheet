@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import PriceInfo from "./PriceInfo/index.js";
 // eslint-disable-next-line react/prop-types
-function MainContent({ selected }) {
+export default function MainContent({ selected }) {
   const [data, setData] = useState({});
 
   useEffect(async () => {
@@ -29,5 +29,3 @@ function MainContent({ selected }) {
     </main>
   );
 }
-
-export default MainContent;

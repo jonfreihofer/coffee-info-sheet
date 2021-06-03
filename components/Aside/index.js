@@ -3,7 +3,7 @@
 import React from "react";
 import { StyledAside } from "./styles";
 // eslint-disable-next-line react/prop-types
-function Aside({ handleSelect }) {
+export default function Aside({ handleSelect }) {
   return (
     <StyledAside>
       <ul className="sidebar-categories">
@@ -17,17 +17,15 @@ function Aside({ handleSelect }) {
           className="sidebar-item"
           onClick={() => handleSelect("thePreparation")}
         >
-          Preparation
+          Roasting
         </li>
         <li
           className="sidebar-item"
           onClick={() => handleSelect("thePresentation")}
         >
-          Presentation
+          Brewing
         </li>
       </ul>
     </StyledAside>
   );
 }
-
-export default Aside;
