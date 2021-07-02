@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import PriceInfo from "./PriceInfo/index.js";
+import PriceInfo from "./PriceInfo";
 // eslint-disable-next-line react/prop-types
 export default function MainContent({ selected }) {
   const [data, setData] = useState({});
