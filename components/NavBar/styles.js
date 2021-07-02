@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 /* nav stuff */
 export const StyledNav = styled.nav`
+  margin: 0 auto;
   display: flex;
   justify-content: center;
   max-width: 100%;
@@ -30,5 +31,4 @@ export const StyledNav = styled.nav`
     background: transparent;
     padding: 0.25rem;
   }
-
 `;
