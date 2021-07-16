@@ -5,7 +5,7 @@ export default function MainContent({ selected }) {
   const [data, setData] = useState({});
 
   useEffect(async () => {
-    const url = "http://localhost:3000/";
+    const url = "http://localhost:3001/";
     const response = await fetch(url);
     const json = await response.json();
     setData(json);
@@ -23,7 +23,7 @@ export default function MainContent({ selected }) {
     <main className="main-content">
       <h1>{currentPageData.title}</h1>
       <p>{currentPageData.content}</p>
-      {currentPageData.title === "The Cost" && <PriceInfo />}
+      {currentPageData.title === "Cost" && <PriceInfo />}
       {renderImg(currentPageData.img)}
       {renderImg(currentPageData.img2)}
     </main>
